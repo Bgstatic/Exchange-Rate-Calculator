@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Exchange Rate Calculator</title>
 </head>
 
@@ -17,7 +19,7 @@
     <div class="container">
         <div class="currency">
 
-            <select name="" id="currency-one">
+            <select name="" id="currency-one" class="col-xs-1">
 
                 <option value="AED">AED</option>
                 <option value="ARS">ARS</option>
@@ -72,11 +74,11 @@
                 <option value="VND">VND</option>
                 <option value="ZAR">ZAR</option>
             </select>
-            <input type="number" placeholder="0" id="amount-one" value="1">
+            <input type="number" id="amount-one" placeholder="0" value="1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="amount-two">
         </div>
 
         <div class="swap-rate-container">
-            <button class="btn" id="swap">Swap</button>
+            <button type="button" class="btn btn-outline-primary" id="swapBtn">Swap</button>
             <div class="rate" id="rate"></div>
         </div>
 
@@ -84,7 +86,7 @@
 
         <div class="currency">
 
-            <select name="" id="currency-two">
+            <select name="" id="currency-two" class="col-xs-1">
 
                 <option value="AED">AED</option>
                 <option value="ARS">ARS</option>
@@ -139,13 +141,23 @@
                 <option value="VND">VND</option>
                 <option value="ZAR">ZAR</option>
             </select>
-            <input type="number" placeholder="0" id="amount-two">
+            <!-- <input type="number" placeholder="0" id="amount-two"> -->
+            <input type="number" placeholder="0" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="amount-two">
 
         </div>
 
     </div>
 
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

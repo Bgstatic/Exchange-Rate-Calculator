@@ -126,6 +126,21 @@ select:focus, input:focus, button:focus {
         margin-right: auto;
         margin-left: 220px;
     }
+    #currency-one {
+        margin: auto;
+    }
+    
+    #currency-two {
+        margin: auto;
+    }
+    
+    #amount-one {
+        margin-right: auto;
+    }
+    
+    #amount-two {
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -146,6 +161,21 @@ select:focus, input:focus, button:focus {
         margin-left: 220px;
         
     }
+    #currency-one {
+        margin: auto;
+    }
+    
+    #currency-two {
+        margin: auto;
+    }
+    
+    #amount-one {
+        margin-right: auto;
+    }
+    
+    #amount-two {
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -159,12 +189,42 @@ select:focus, input:focus, button:focus {
         margin-right: auto;
         left: 285px;
     }
+    #currency-one {
+        margin: auto;
+    }
+    
+    #currency-two {
+        margin: auto;
+    }
+    
+    #amount-one {
+        margin-right: auto;
+    }
+    
+    #amount-two {
+        margin-right: auto;
+    }
 
     .rate {
 
         font-size: 25px;
         margin-right: auto;
         margin-left: 220px;
+    }
+    #currency-one {
+        margin: auto;
+    }
+    
+    #currency-two {
+        margin: auto;
+    }
+    
+    #amount-one {
+        margin-right: auto;
+    }
+    
+    #amount-two {
+        margin-right: auto;
     }
 }
 
@@ -185,6 +245,21 @@ select:focus, input:focus, button:focus {
         font-size: 25px;
         margin-right: auto;
         margin-left: 220px;
+    }
+    #currency-one {
+        margin: auto;
+    }
+    
+    #currency-two {
+        margin: auto;
+    }
+    
+    #amount-one {
+        margin-right: auto;
+    }
+    
+    #amount-two {
+        margin-right: auto;
     }
 }
 

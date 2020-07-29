@@ -74,15 +74,17 @@
                 <option value="VND">VND</option>
                 <option value="ZAR">ZAR</option>
             </select>
-            <input type="number" id="amount-one" placeholder="0" value="1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="amount-two">
+            <div class="col-xs-1" id="amountDiv1">
+                <input type="number" id="amount-one" placeholder="0" value="1" class="form-control" aria-label="Small"
+                    aria-describedby="inputGroup-sizing-sm" id="amount-one">
+            </div>
+            <!-- <input type="number" id="amount-one" placeholder="0" value="1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="amount-two"> -->
         </div>
 
         <div class="swap-rate-container">
             <button type="button" class="btn btn-outline-primary" id="swapBtn">Swap</button>
-            <div class="rate" id="rate"></div>
+            <div id="rate" class="float-left"></div>
         </div>
-
-
 
         <div class="currency">
 
@@ -142,7 +144,10 @@
                 <option value="ZAR">ZAR</option>
             </select>
             <!-- <input type="number" placeholder="0" id="amount-two"> -->
-            <input type="number" placeholder="0" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="amount-two">
+            <div class="col-xs-1" id="amountDiv2">
+                <input type="number" placeholder="0" class="form-control" aria-label="Small"
+                    aria-describedby="inputGroup-sizing-sm" id="amount-two">
+            </div>
 
         </div>
 

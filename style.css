@@ -7,6 +7,7 @@
 }
 
 body {
+
     font-family: 'Rubik', sans-serif;
     background-color: lightgray;
     display: flex;
@@ -18,6 +19,7 @@ body {
 }
 
 h1 {
+
     color: var(--primary-color);
 }
 
@@ -26,6 +28,7 @@ p {
 }
 
 .btn {
+
     color: white;
     background: var(--primary-color);
     cursor: pointer;
@@ -35,10 +38,28 @@ p {
 }
 
 .money-img {
+
     width: 150px;
+    animation: updown 1.5s ease infinite;
+    
 }
 
+@keyframes updown {
+    0% {
+      transform: translateY(-8%);
+    }
+  
+    50% {
+      transform: translateY(8%);
+    }
+  
+    100% {
+      transform: translateY(-8%);
+    }
+  }
+
 .currency {
+
     padding: 40px 0;
     display: flex;
     align-items: center;
@@ -46,6 +67,7 @@ p {
 }
 
 .currency select {
+
     padding: 10px 20px 10px 10px;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -60,6 +82,7 @@ p {
 }
 
 .currency input {
+
     border: 0;
     background: transparent;
     font-size: 30px;
@@ -67,25 +90,122 @@ p {
 }
 
 .swap-rate-container {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .rate {
-    color: var(--primary-color);
-    font-size: 14px;
-    padding: 0 10px;
+
+    color: var(--primary-color) ;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-right: auto;
+    margin-left: 220px;
 }
 
 select:focus, input:focus, button:focus {
     outline: 0;
 }
 
-@media(max-width: 600px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
 
     .currency input {
-
         width: 200px;
     }
+
+    #swapBtn {
+        position: relative;
+        margin-right: auto;
+        left: 285px;
+    }
+
+    .rate {
+        font-size: 15px;
+        margin-right: auto;
+        margin-left: 220px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .currency input {
+        width: 200px;
+    }
+
+    #swapBtn {
+        position: relative;
+        margin-right: auto;
+        left: 285px;
+    }
+
+    .rate {
+        font-size: 25px;
+        margin-right: auto;
+        margin-left: 220px;
+        
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .currency input {
+        width: 200px;
+    }
+
+    #swapBtn {
+        position: relative;
+        margin-right: auto;
+        left: 285px;
+    }
+
+    .rate {
+
+        font-size: 25px;
+        margin-right: auto;
+        margin-left: 220px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .currency input {
+        width: 200px;
+    }
+
+    #swapBtn {
+        position: relative;
+        margin-right: auto;
+        left: 285px;
+    }
+
+    .rate {
+        
+        font-size: 25px;
+        margin-right: auto;
+        margin-left: 220px;
+    }
+}
+
+#currency-one {
+    margin: auto;
+}
+
+#currency-two {
+    margin: auto;
+}
+
+#amount-one {
+    margin-right: auto;
+}
+
+#amount-two {
+    margin-right: auto;
+}
+
+#swapBtn {
+    position: relative;
+    margin-right: auto;
+    left: 285px;
 }

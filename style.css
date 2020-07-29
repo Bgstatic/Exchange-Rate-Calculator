@@ -116,6 +116,10 @@ select:focus, input:focus, button:focus {
     h1 {
       text-align: center;
     }
+    #rate {
+       
+        font-size: 15px;    
+    }
   }
 
 
